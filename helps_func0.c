@@ -105,7 +105,7 @@ int helpEnv(config *build)
 int helpHistory(config *build)
 {
 	char str[] = "history: history\n\tNot supported in this version.\n";
-	
+
 	(void)build;
 	write(STDOUT_FILENO, str, _strlen(str));
 	return (1);

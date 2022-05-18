@@ -40,7 +40,7 @@ void errorHandler(config *build)
 char *getErrorMessage(void)
 {
 	char *str;
-	
+
 	switch (errno)
 	{
 		case EBADCD:
@@ -79,6 +79,7 @@ char *getErrorMessage(void)
 unsigned int countDigits(int num)
 {
 	register int digits = 0;
+
 	while (num > 0)
 	{
 		digits++;

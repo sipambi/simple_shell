@@ -35,6 +35,7 @@ void freeList(linked_l *head)
 {
 	linked_l *current;
 	linked_l *tmp;
+
 	if (!head)
 		return;
 	current = head;

@@ -2,7 +2,8 @@
 
 /**
  * checkPath - searches $PATH for directory of command
- * @build: input build
+ * @build: input builid
+ * Return: true or false
  */
 
 _Bool checkPath(config *build)
@@ -56,7 +57,7 @@ _Bool checkEdgeCases(config *build)
 {
 	char *copy;
 	struct stat st;
-	
+
 	copy = _strdup(build->path);
 	if (!copy)
 	{

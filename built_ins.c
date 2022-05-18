@@ -77,7 +77,6 @@ int exitFunc(config *build)
 int historyFunc(config *build)
 {
 	char *str = "Currently in development\n";
-	
 	(void)build;
 	write(STDOUT_FILENO, str, _strlen(str));
 	return (1);
@@ -92,7 +91,6 @@ int historyFunc(config *build)
 int aliasFunc(config *build)
 {
 	char *str = "Currently in development\n";
-	
 	(void)build;
 	write(STDOUT_FILENO, str, _strlen(str));
 	return (1);
